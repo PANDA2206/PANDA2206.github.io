@@ -223,6 +223,15 @@ img {
   box-shadow: 0 10px 30px -5px rgba(2, 12, 27, 0.7);
 }
 
+/* Specific class for portrait/avatar so we can control sizing separately */
+.profile-avatar {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px -5px rgba(2, 12, 27, 0.7);
+}
+
 /* Sections */
 .section {
   padding: 4rem 0;
@@ -450,6 +459,11 @@ img {
   .languages {
     max-width: 100%;
   }
+  /* Reduce avatar size on smaller screens */
+  .profile-avatar {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -461,6 +475,11 @@ img {
   }
   .section-title {
     font-size: 1.5rem;
+  }
+  /* Extra small screens: make avatar a bit smaller */
+  .profile-avatar {
+    width: 180px;
+    height: 180px;
   }
 }
 
