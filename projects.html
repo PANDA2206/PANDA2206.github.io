@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Pankaj Rathi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-43PUC+R+OGUrBe0bvwo4vPcK+CrOzX1sFcsSLNJM84I5h28Uj4dXBf+kn86IkXEXcIGLD11RPS7xZkXh6dq9Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Pankaj Rathi</a>
+        <nav id="nav" class="nav-links">
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title">Projects</h1>
+          <!-- Filter Bar -->
+          <div class="filter-bar" role="navigation" aria-label="Project categories">
+            <span class="filter-link active" data-filter="all">All</span>
+            <span class="filter-link" data-filter="llm">LLM &amp; AI</span>
+            <span class="filter-link" data-filter="cv">Computer Vision</span>
+            <span class="filter-link" data-filter="mlops">Data Engineering &amp; MLOps</span>
+            <span class="filter-link" data-filter="gen">Generative Models</span>
+          </div>
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Virtual Doctor Assistant -->
+            <div class="project-item llm ai">
+              <div class="project-image">
+                <img src="assets/images/neural_network.png" alt="Abstract illustration inspired by neural networks and AI" />
+              </div>
+              <div class="project-content">
+                <h3>Virtual Doctor Assistant – Orthopedics</h3>
+                <div class="project-tags">
+                  <span>LLM</span><span>Azure</span><span>Graph Search</span>
+                </div>
+                <p class="project-description">
+                  Built an LLM‑powered assistant that synthesises structured summaries from clinical notes and X‑ray images. Developed
+                  specialised agents for document parsing, image analysis and patient history retrieval using graph‑based and semantic
+                  search, ensuring privacy with federated learning. Deployed the system on Azure using FastAPI and a multi‑agent
+                  coordinator for seamless integration.
+                </p>
+                <div class="project-links">
+                  <!-- Replace with actual links when available -->
+                  <a href="https://github.com/example/virtual-doctor-assistant" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Advanced Computer Vision Projects -->
+            <div class="project-item cv">
+              <div class="project-image">
+                <img src="assets/images/microchip.jpg" alt="Close-up of a colourful printed circuit board representing technological complexity" />
+              </div>
+              <div class="project-content">
+                <h3>Advanced Computer Vision Projects</h3>
+                <div class="project-tags">
+                  <span>Computer Vision</span><span>Python</span><span>Deep Learning</span>
+                </div>
+                <p class="project-description">
+                  Implemented a suite of vision algorithms including Selective Search for region proposals, R‑CNN and RANSAC for robust
+                  feature detection and segmentation, HDR image reconstruction with demosaicing, and a clustering‑based face recognition
+                  pipeline. Each module was optimised for accuracy and run‑time efficiency.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/example/computer-vision-projects" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Machine Learning in Production -->
+            <div class="project-item mlops">
+              <div class="project-image">
+                <img src="assets/images/graph_laptop.jpg" alt="Person analysing a graph on a laptop screen representing data monitoring" />
+              </div>
+              <div class="project-content">
+                <h3>Machine Learning in Production</h3>
+                <div class="project-tags">
+                  <span>MLOps</span><span>CI/CD</span><span>Monitoring</span>
+                </div>
+                <p class="project-description">
+                  Completed an intensive Coursera specialisation on deploying and maintaining ML models. Learned best practices for
+                  versioning, logging, concept‑drift handling and scalable pipeline design using tools like Docker, Kubernetes and
+                  MLFlow. Applied knowledge to deploy toy models with continuous integration and monitoring.
+                </p>
+                <div class="project-links">
+                  <a href="https://www.coursera.org/account/accomplishments/certificate" target="_blank" aria-label="Course Certificate"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Deep Convolutional GAN -->
+            <div class="project-item gen">
+              <div class="project-image">
+                <img src="assets/images/coding.jpg" alt="Developers coding on a laptop symbolising generative adversarial networks" />
+              </div>
+              <div class="project-content">
+                <h3>Deep Convolutional GAN</h3>
+                <div class="project-tags">
+                  <span>Generative Models</span><span>DCGAN</span><span>Fashion MNIST</span>
+                </div>
+                <p class="project-description">
+                  Designed and trained a Deep Convolutional GAN architecture to generate realistic fashion images. Achieved a
+                  generator loss of 0.014 within 50 epochs on the Fashion‑MNIST dataset, demonstrating the ability to produce
+                  high‑fidelity synthetic data for downstream tasks.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/example/dcgan-fashion-mnist" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© 2025 Pankaj Rathi. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="mailto:rathipankaj2299@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/pankaj-2206ra/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="tel:+4917668691669" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
